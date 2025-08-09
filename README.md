@@ -1,4 +1,3 @@
-STILL UNDER DEVELOPMENT
 # Academic Programs & Projects
 
 Welcome! This repository contains a collection of programs and projects created by me as part of my academic journey. Each project is designed to solve real-life scenarios, demonstrating my creativity, logical thinking, and passion for learning.
@@ -37,7 +36,7 @@ A brief overview of included projects (update this section as you add new projec
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/BarathiShankar/your-repo-name.git
+   git clone https://github.com/BarathiShankar/Individual-Projects.git
    ```
 2. Navigate to the project folder of your choice.
 3. Follow the instructions in the individual project’s README or source files to run the program.
