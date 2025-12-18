@@ -1,0 +1,75 @@
+<!--Student management system using HTML,JS and CSS-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABC Student management System
+        </title>
+        <style>
+            .samp
+            {
+                font-family : Arial;
+            }
+            h3
+            {
+                text-align  : center;
+                font-size : 50px;
+                background-color : Aqua;
+            }
+            .formclass
+            {
+                font-family : "Ink Free";
+                width : 700px;
+                margin : 2px;
+                padding : 10px;
+                border : 1px solid black;
+                /* margin - to create a box,padding to create in-form space,border to create a visible border(only if color is mentioned*/
+            }
+        </style>
+        <script>
+            function f1(event)
+                {
+                    event.preventDefault();
+                    let name=document.getElementById("name").value;
+                    let pass=document.getElementById("pass").value;
+                    let em=document.getElementById("email").value;
+                     document.getElementById("output").innerHTML = "Name : "+name+" || Password : "+pass+"  ||  Email : "+em+"  ||  ";
+                }
+            function Clearall(event)
+                {
+                    document.getElementById("output").innerHTML="";
+                }
+        </script>
+    </head>
+    <body>
+        <h3>Welcome for registration 2025-26</h3><br><hr><br>
+        <p class="samp">Fill the Form for creating an account - </p><br><br>
+        <form class="formclass" id="form1" method="get"><b>
+        Name : <input name="name" id="name" required><br><br>
+        E-Mail address : <input name="email" id="email" required><br><br>
+        Create a password : <input name="pass" id="pass" type="password" required><br><br>
+        Gender : <input type="radio" value="Male" name="gen"required>Male
+            <input type="radio" value="Female" name="gen">Female
+            <input type="radio" value="Others" name="gen">Others<br><br>
+        Select the country : <select name="country" size="2">
+                    <option value="ind">India
+                    <option value="usa">USA
+                    <option value="chi">China
+                    <option value="rus">Russia
+                    <option value="jap">Japan
+                    <option value="fra">France
+                    <option value="rsa">South Africa
+                    </select><br><br>
+        Select Your Streams in 12th : <input type="checkbox" value="phy" name="course" required>Physics
+                        <input type="checkbox" value="che" name="course">Chemistry
+                        <input type="checkbox" value="mat" name="course">Maths
+                        <input type="checkbox" value="CS" name="course">Computer Science
+                        <input type="checkbox" value="bio" name="course">Biology<br><br>
+        Enter your Cutoff : <input type="text" name="cutoff" maxlength="5" required><br><br>
+        Upload Passport size photo : <input type="file" name="pic" required><br><br></b>
+        <button type="submit" onclick="f1(event)">Create Account</button>
+        <button type="reset">Clear</button>
+        <button type="button" onclick="Clearall(event)">Clear All</button>
+        </form>
+        <div id="output"></div>
+    </body>
+</html>
