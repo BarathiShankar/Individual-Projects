@@ -1,0 +1,44 @@
+<!--To list the dynamic data of students in a table to delete the user-->
+<doctype html>
+<html>
+    <head>
+        <title>ABC Student management System - Student List
+        </title>
+        <style>
+            h3
+            {
+                text-align  : center;
+                font-size : 50px;
+                background-color : Aqua;
+            }
+            table,th,td
+            {
+                border : 1px solid black;
+                border-collapse : collapse;
+                padding : 10px;
+                text-align : center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Student List - 2025-26</h3><br><hr><br>
+        <table>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr id="output">
+            </tr>
+            <script>
+            const stud_data = localStorage.getItem("stud_data");
+            if (stud_data) {
+            const data = JSON.parse(stud_data);
+            document.getElementById("output").innerHTML =
+                `<td>${data.name}</td><td>${data.email}</td><td>${data.pass}</td>`;
+            }
+        </script>
+            <a href="file:///C:/Users/barat/OneDrive/Desktop/GitHub%20Repos/Individual-Projects/Individual-Projects/Stud_manage.html">
+            <button>Add</button></a>
+            <button>Delete</button>
+</doctype>

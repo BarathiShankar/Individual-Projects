@@ -32,11 +32,9 @@
                     let name=document.getElementById("name").value;
                     let pass=document.getElementById("pass").value;
                     let em=document.getElementById("email").value;
-                     document.getElementById("output").innerHTML = "Name : "+name+" || Password : "+pass+"  ||  Email : "+em+"  ||  ";
-                }
-            function Clearall(event)
-                {
-                    document.getElementById("output").innerHTML="";
+                    const stud = {name,pass,email};
+                    localStorage.setItem("stud_data", JSON.stringify(stud));
+                    window.location.href = "Stud_List.html";
                 }
         </script>
     </head>
@@ -68,8 +66,6 @@
         Upload Passport size photo : <input type="file" name="pic" required><br><br></b>
         <button type="submit" onclick="f1(event)">Create Account</button>
         <button type="reset">Clear</button>
-        <button type="button" onclick="Clearall(event)">Clear All</button>
         </form>
-        <div id="output"></div>
     </body>
 </html>
