@@ -17,20 +17,32 @@
                 padding : 10px;
                 text-align : center;
             }
+            table:hover
+            {
+                background-color : lightcoral;
+                scale:1.01;
+                transition:1s;
+            }
         </style>
     </head>
     <body>
         <h3>Student List - 2025-26</h3><br><hr><br>
-        <table>
+        <center><table>
             <tr>
-                <th>Student ID</th>
+                <th>Serial Number</th>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Password</th>
             </tr>
             <tbody id="output">
             </tbody>
         </table>
-            <script>
+    <br><br>
+        <a href="Stud_manage.html">
+            <button>Add</button></a>
+            <button id="deleteBtn">Delete</button>
+     </center>
+     <script>
                     const output = document.getElementById("output");
                     let stud_data = JSON.parse(localStorage.getItem("stud_data")) || [];
                     function renderTable()
@@ -47,8 +59,10 @@
                         });
                     }
                     renderTable();
-                    document.getElementById("deleteBtn").addEventListener("click", function () {
-                        if (stud_data.length === 0) {
+                    document.getElementById("deleteBtn").addEventListener("click", function () 
+                    {
+                        if (stud_data.length === 0) 
+                        {
                             alert("No students to delete.");
                             return;
                         }
@@ -57,8 +71,5 @@
                         renderTable();
                     });
         </script>
-            <a href="file:///C:/Users/barat/OneDrive/Desktop/GitHub%20Repos/Individual-Projects/Individual-Projects/Stud_manage.html">
-            <button>Add</button></a>
-            <button>Delete</button>
 </body>
 </html>

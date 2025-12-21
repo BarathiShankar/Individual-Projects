@@ -35,7 +35,7 @@
                     let list = JSON.parse(localStorage.getItem("stud_data")) || [];
                     list.push(stud);
                     localStorage.setItem("stud_data", JSON.stringify(list));
-                    window.location.href = "file:///C:/Users/barat/OneDrive/Desktop/GitHub%20Repos/Individual-Projects/Individual-Projects/Stud_List.html";
+                    window.location.href = "Stud_List.html";
                 }
         </script>
     </head>
@@ -64,7 +64,7 @@
                         <input type="checkbox" value="CS" name="course">Computer Science
                         <input type="checkbox" value="bio" name="course">Biology<br><br>
         Enter your Cutoff : <input type="text" name="cutoff" maxlength="5" required><br><br>
-        <center><button type="submit" onclick="f1(Event)">Create Account</button>
+        <center><button type="submit" onclick="f1(event)">Create Account</button>
         <button type="reset">Clear</button></center>
         </form>
     </body>
