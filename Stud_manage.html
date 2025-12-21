@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ABC Student management System
-        </title>
+        <title>ABC Student management System  </title>
         <style>
             .samp
             {
@@ -31,17 +30,19 @@
                     event.preventDefault();
                     let name=document.getElementById("name").value;
                     let pass=document.getElementById("pass").value;
-                    let em=document.getElementById("email").value;
-                    const stud = {name,pass,email};
-                    localStorage.setItem("stud_data", JSON.stringify(stud));
-                    window.location.href = "Stud_List.html";
+                    let email=document.getElementById("email").value;
+                    const stud = { name, pass, email };
+                    let list = JSON.parse(localStorage.getItem("stud_data")) || [];
+                    list.push(stud);
+                    localStorage.setItem("stud_data", JSON.stringify(list));
+                    window.location.href = "file:///C:/Users/barat/OneDrive/Desktop/GitHub%20Repos/Individual-Projects/Individual-Projects/Stud_List.html";
                 }
         </script>
     </head>
     <body>
         <h3>Welcome for registration 2025-26</h3><br><hr><br>
         <p class="samp">Fill the Form for creating an account - </p><br><br>
-        <form class="formclass" id="form1" method="get"><b>
+        <form class="formclass" id="form1" method="post"><b>
         Name : <input name="name" id="name" required><br><br>
         E-Mail address : <input name="email" id="email" required><br><br>
         Create a password : <input name="pass" id="pass" type="password" required><br><br>
@@ -63,9 +64,8 @@
                         <input type="checkbox" value="CS" name="course">Computer Science
                         <input type="checkbox" value="bio" name="course">Biology<br><br>
         Enter your Cutoff : <input type="text" name="cutoff" maxlength="5" required><br><br>
-        Upload Passport size photo : <input type="file" name="pic" required><br><br></b>
-        <button type="submit" onclick="f1(event)">Create Account</button>
-        <button type="reset">Clear</button>
+        <center><button type="submit" onclick="f1(Event)">Create Account</button>
+        <button type="reset">Clear</button></center>
         </form>
     </body>
 </html>

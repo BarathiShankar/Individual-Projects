@@ -1,9 +1,8 @@
 <!--To list the dynamic data of students in a table to delete the user-->
-<doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>ABC Student management System - Student List
-        </title>
+        <title>ABC Student management System - Student List</title>
         <style>
             h3
             {
@@ -28,17 +27,38 @@
                 <th>Name</th>
                 <th>Email</th>
             </tr>
-            <tr id="output">
-            </tr>
+            <tbody id="output">
+            </tbody>
+        </table>
             <script>
-            const stud_data = localStorage.getItem("stud_data");
-            if (stud_data) {
-            const data = JSON.parse(stud_data);
-            document.getElementById("output").innerHTML =
-                `<td>${data.name}</td><td>${data.email}</td><td>${data.pass}</td>`;
-            }
+                    const output = document.getElementById("output");
+                    let stud_data = JSON.parse(localStorage.getItem("stud_data")) || [];
+                    function renderTable()
+                    {
+                        output.innerHTML = "";
+                        stud_data.forEach((st, index) => {
+                            output.innerHTML += `
+                                <tr>
+                                    <td>${index + 1}</td>
+                                    <td>${st.name}</td>
+                                    <td>${st.email}</td>
+                                    <td>${st.pass}</td>
+                                </tr>`;
+                        });
+                    }
+                    renderTable();
+                    document.getElementById("deleteBtn").addEventListener("click", function () {
+                        if (stud_data.length === 0) {
+                            alert("No students to delete.");
+                            return;
+                        }
+                        stud_data.pop();
+                        localStorage.setItem("stud_data", JSON.stringify(stud_data));
+                        renderTable();
+                    });
         </script>
             <a href="file:///C:/Users/barat/OneDrive/Desktop/GitHub%20Repos/Individual-Projects/Individual-Projects/Stud_manage.html">
             <button>Add</button></a>
             <button>Delete</button>
-</doctype>
+</body>
+</html>
