@@ -1,0 +1,20 @@
+h2
+{
+    text-align: center;
+    color: darkblue;
+    font-family: 'Segoe UI';
+}
+#list
+{
+    border : 1px darkgreen;
+    border-radius:10px;
+    padding:10px;
+}
+#list:hover
+{
+    background-color: lime;
+}
+button{
+    border-radius :30px;
+    background-color: crimson;
+}
