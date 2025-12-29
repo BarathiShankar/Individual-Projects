@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+    transition: 0.9s;
+    color: beige;
+    background-color: rgb(36, 36, 255);
+}
+
+h2:hover {
+    scale: 1.02;
+    background-color: blue;
+}
+
+body {
+    background-color: black;
+    color: aqua;
+}
+
+button {
+    background-color: lime;
+    margin: 10px;
+    padding: 8px 12px;
+    transition: 0.5s;
+}
+
+div {
+    color: lightpink;
+}
+
+button:hover {
+    scale: 1.1;
+    background-color: rgb(0, 199, 0);
+}
+
+#maq1 {
+    background-color: crimson;
+    color: bisque;
+    font-family: 'Lucida Sans';
+}
+
