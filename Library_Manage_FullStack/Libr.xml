@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library>   
+    <Category name="Comics">
+        <Book id="C1">
+            <Name>Marvel India</Name>
+            <Available>5</Available>
+            <Author>Marvel Studios</Author>
+            <Cost>1500</Cost>
+        </Book>
+        <Book id="C2">
+            <Name>The Wimpy Kid</Name>
+            <Available>2</Available>
+            <Author>Jeff Kinney</Author>
+            <Cost>300</Cost>
+        </Book>
+        <Book id="C3">
+            <Name>The Sword Thief</Name>
+            <Available>3</Available>
+            <Author>Peter Lerangis</Author>
+            <Cost>200</Cost>
+        </Book>
+    </Category>
+    <Category name="Novel">
+        <Book id="N1">
+            <Name>RobinHood</Name>
+            <Available>10</Available>
+            <Author>Unknown</Author>
+            <Cost>150</Cost>
+        </Book>
+        <Book id="N2">
+            <Name>Catch-2</Name>
+            <Available>1</Available>
+            <Author>Joseph Heller</Author>
+            <Cost>500</Cost>
+        </Book>
+    </Category>
+    <Category name="Short Stories">
+        <Book id="S1">
+            <Name>The Black Aeroplane</Name>
+            <Available>7</Available>
+            <Author>Frederick Forsyth</Author>
+            <Cost>100</Cost>
+        </Book>
+        <Book id="S2">
+            <Name>The Batchlor of Arts</Name>
+            <Available>2</Available>
+            <Author>RK Narayan</Author>
+            <Cost>250</Cost>
+        </Book>
+    </Category>
+</Library>
+
