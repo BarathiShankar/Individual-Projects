@@ -1,0 +1,33 @@
+<!--Program to create a library management system using xml, css, js and html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="libr_style.css">
+    <title>
+        The Library Management System
+    </title>
+</head>
+
+<body>
+    <h2>Library Management System</h2>
+    <hr><br><br> Select the Book Category
+    <select id="sel">
+        <option value="Comics">Comics</option>
+        <option value="Novel">Novels</option>
+        <option value="Short Stories">Short Stories</option>
+    </select>
+    <button id="but" type="submit" onclick="sear_books()">Search Books</button>
+    <br>
+    <div id="table_container">
+    </div>
+    <button onclick="calctotal()">Purchase</button><button onclick="rent()">Rent</button><br>
+    <div id="Total"></div>
+    <ul id="rented">
+        <h2>Rented Books</h2>
+    </ul>
+    <script src="Library.js"></script><br><br>
+    <marquee id="maq1">Disclaimer : Returning of books are not welcomed</marquee>
+</body>
+
+</html>
