@@ -58,14 +58,15 @@ function rent() {
     const ck = document.querySelectorAll(".ckbox:checked");
     ck.forEach(check => {
         const row = check.closest("tr");
-        const av = row.querySelector(".avail").textContent;
+        const av = row.querySelector(".avail");
         const name = row.querySelector(".n").textContent;
-        let a = parseInt(av);
+        let a = parseInt(av.textContent);
         if (a > 0) {
             a--;
             av.textContent = a;
         } else {
             alert("Selected Book is out of stock !");
+            return;
         }
         check.checked = false;
         document.getElementById("rented").innerHTML += `<li>${name}</li>`;
