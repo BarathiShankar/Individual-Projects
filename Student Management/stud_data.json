@@ -1,0 +1,22 @@
+  [
+    {
+        "Name": "Samuel",
+        "Roll_Number": "1001",
+        "Department": "Automobile Engineering"
+    },
+    {
+        "Name": "Ferhaan",
+        "Roll_Number": "5003",
+        "Department": "Aeronautical Engineering"
+    },
+    {
+        "Name": "Kabali",
+        "Roll_Number": "1004",
+        "Department": "Automobile Engineering"
+    },
+    {
+        "Name": "Racheal",
+        "Roll_Number": "3005",
+        "Department": "Information Technology"
+    }
+]
