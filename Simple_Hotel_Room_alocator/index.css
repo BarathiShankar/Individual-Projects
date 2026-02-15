@@ -1,0 +1,27 @@
+h1{
+    text-align:center;
+    color : green;
+}
+body{
+    background-color:rgb(60, 0, 98);
+    color : pink;
+}
+button
+{
+    background-color:brown;
+    color : white;
+    border-radius : 15px;
+    padding : 10px;
+}
+button:hover
+{
+    border: 2px solid white;
+    background-color:rgb(149, 125, 75);
+}
+
+marquee
+{
+    background-color : rgb(244, 244, 9);
+    color : black;
+    height : 30px;
+}
