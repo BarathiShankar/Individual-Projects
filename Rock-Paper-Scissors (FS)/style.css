@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.choice-btn {
+    font-size: 1rem;
+    padding: 15px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, background 0.3s;
+    background: #007bff;
+    color: white;
+}
+
+.choice-btn:hover {
+    transform: scale(1.1);
+    background: #0056b3;
+}
+
+.result-area {
+    margin: 30px 0;
+}
+
+#message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #c82333;
+}
